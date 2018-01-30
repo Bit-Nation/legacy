@@ -1,0 +1,10 @@
+.idea
+node_modules
+src/*.js
+dist
+coverage
+jest_*/
+npm-debug.log
+.DS_Store
+index.js
+.database

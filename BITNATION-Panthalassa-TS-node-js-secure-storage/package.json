@@ -1,0 +1,51 @@
+{
+  "name": "BITNATION-Panthalassa-TS-node-js-secure-storage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./NodeJsSecureStorage.js",
+  "scripts": {
+    "test": "npm run build && jest --verbose",
+    "build": "rm -rf ./dist && tsc",
+    "postinstall": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bit-Nation/BITNATION-Panthalassa-TS-node-js-secure-storage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bit-Nation/BITNATION-Panthalassa-TS-node-js-secure-storage/issues"
+  },
+  "homepage": "https://github.com/Bit-Nation/BITNATION-Panthalassa-TS-node-js-secure-storage#readme",
+  "dependencies": {
+    "@types/crypto-js": "^3.1.36",
+    "@types/fs-extra": "^4.0.2",
+    "@types/jest": "^21.1.2",
+    "@types/node": "^8.0.33",
+    "BITNATION-Panthalassa-TS-secure-storage-interface": "git+https://github.com/Bit-Nation/BITNATION-Panthalassa-TS-secure-storage-interface.git#f01f532b4e7794ed1f6b708ec9425c3976097f62",
+    "crypto-js": "^3.1.9-1",
+    "ts-jest": "^21.1.0",
+    "typescript": "^2.5.3"
+  },
+  "devDependencies": {
+    "fs-extra": "^4.0.2",
+    "jest": "^21.2.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "collectCoverage": true,
+    "mapCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  }
+}

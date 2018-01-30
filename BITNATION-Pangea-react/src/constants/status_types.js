@@ -1,0 +1,13 @@
+export const APP_STATUS = {
+  INACTIVE: 'INACTIVE',
+  RUNNING: 'RUNNING',
+  STARTING: 'STARTING',
+  BROKEN: 'BROKEN',
+};
+
+export const SCREEN_TYPES = {
+  WELCOME: 'WELCOME',
+  MAIN: 'MAIN',
+  NATIONS: 'NATIONS',
+  NATION: 'NATION',
+};

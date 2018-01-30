@@ -1,0 +1,37 @@
+{
+  "name": "BITNATION-Panthalassa-TS-node-js-fs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./NodeJsFs.js",
+  "scripts": {
+    "test": "npm run build:dev && jest --verbose",
+    "build:dev": "rm -f NodeJsFs.js && tsc -p tsconfig.dev.json",
+    "build:prod": "tsc",
+    "postinstall": "npm run build:prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bit-Nation/BITNATION-Panthalassa-TS-node-js-fs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bit-Nation/BITNATION-Panthalassa-TS-node-js-fs/issues"
+  },
+  "homepage": "https://github.com/Bit-Nation/BITNATION-Panthalassa-TS-node-js-fs#readme",
+  "dependencies": {
+    "@types/node": "^8.0.33",
+    "BITNATION-Panthalassa-TS-fs-interface": "git+https://github.com/Bit-Nation/BITNATION-Panthalassa-TS-fs-interface.git#2.0.0",
+    "typescript": "^2.5.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.2",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.1.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "mapCoverage": true
+  }
+}
